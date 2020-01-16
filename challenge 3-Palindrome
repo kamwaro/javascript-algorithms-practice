@@ -1,0 +1,12 @@
+
+function palindrome(str){
+	var regex = /[\W_]/g;
+	var smallStr = str.toLowerCase().replace(regex, '');
+	var strReversed = smallStr.split('').reverse().join('');
+console.log(strReversed);
+	if( smallStr == strReversed)
+	return true;
+	return false;
+}
+
+palindrome("ey**e");
