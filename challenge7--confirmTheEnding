@@ -1,0 +1,11 @@
+
+
+function confirmEnding(str, target){
+	var ending = str.substr(-(target.length));
+	if(ending == target)
+	return true;
+	return false;
+
+}
+
+confirmEnding('Hello, my name is Pusha', 'Pusha');
