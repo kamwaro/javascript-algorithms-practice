@@ -1,0 +1,16 @@
+function truncateString(str, num){
+		
+		if(num >= str.length) return str;
+		if(str.length <= 3){
+	return str.slice(0,num) + '...';
+		}
+
+		if(str.length > 3)
+		return str.slice(0, num-3) + '...';
+}
+
+
+truncateString('A-tisket a-tasket A green and yellow basket ', 11);
+
+// Using slice string method
+
