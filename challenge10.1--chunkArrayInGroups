@@ -1,0 +1,12 @@
+function chunkArrayInGroups(arr, size){
+	
+	var final = [];
+	while(arr.length > 0){
+	 final.push(arr.splice(0, size));			
+		}
+	return final;
+		}
+
+chunkArrayInGroups(['a','b','c','d'],2);
+
+// Using splice string method
