@@ -1,0 +1,21 @@
+function rot13(str){
+	var deciphered = '';
+	for(var i=0; i<str.length; i++){
+		console.log(str.charCodeAt(i));
+		
+		var asciNum = (str.charCodeAt(i));
+
+		if(asciNum >= 65 && asciNum <= 77){
+			deciphered += String.fromCharCode(asciNum + 13);
+			}
+			else if( asciNum >= 78 && asciNum <= 90){
+				deciphered += String.fromCharCode(asciNum - 13);
+				}
+			else {
+				deciphered += String.fromCharCode(asciNum);
+				}
+		}
+	console.log(deciphered);
+}
+
+rot13("SERR PBQR PNZC");

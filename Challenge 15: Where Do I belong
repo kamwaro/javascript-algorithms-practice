@@ -1,0 +1,28 @@
+function getIndexToIns(arr, num){
+	
+	// Find my place in this sorted array
+
+	console.log(arr);
+
+	var sorted = arr.sort(function(a,b){
+		return a-b});
+	console.log(sorted);
+
+	for(var i = 0; i<sorted.length; i++){
+		
+		if(num < sorted[i])
+		return sorted.indexOf(sorted[i]);
+
+		};
+	
+	
+
+}
+
+getIndexToIns([40, 60, 5], 50);
+
+
+getIndexToIns([40, 60, 5], 50);
+
+
+

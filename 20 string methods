@@ -74,11 +74,13 @@ console.log(stringOne.split(" "))
 console.log(stringOne.startsWith("free"))
 
 
-/*16. substr()  => 
+/*16. substr()  => extracts a part of string beginning from a specified start position through a specified number of characters
 
 */
 
-/*17. substring()  => 
+	console.log(stringOne.substr(1, 4))
+
+/*17. substring()  => similar to slice
 
 */
 
