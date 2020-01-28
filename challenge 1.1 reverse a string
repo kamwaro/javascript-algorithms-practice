@@ -1,0 +1,18 @@
+
+let str = 'balling!';
+
+const strArr = str.split('');
+
+let resultArr = [];
+
+for(let i=0; i<strArr.length; i++){
+	resultArr.unshift(strArr[i]);	
+
+		};
+
+const result = resultArr.join('');
+
+
+
+console.log(result);
+

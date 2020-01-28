@@ -1,0 +1,19 @@
+
+
+function reverser(str){
+let strArr = str.split('');
+
+const reversedArr = [];
+ 
+for(letter of strArr){
+	reversedArr.unshift(letter);
+
+	}
+
+const reversed = reversedArr.join("");
+return reversed;
+}
+
+
+
+reverser('travelling and earning!');
